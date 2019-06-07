@@ -1688,10 +1688,10 @@ InteractiveVideo.prototype.attachControls = function ($wrapper) {
     if (self.controls.$play.hasClass('h5p-pause') && !disabled) {
 
       // Auto toggle fullscreen on play if on a small device
-      var isSmallDevice = screen ? Math.min(screen.width, screen.height) <= self.width : true;
-      if (!self.hasFullScreen && isSmallDevice && self.$container.hasClass('h5p-standalone') && self.$container.hasClass('h5p-minimal')) {
-        self.toggleFullScreen();
-      }
+      //var isSmallDevice = screen ? Math.min(screen.width, screen.height) <= self.width : true;
+      //if (!self.hasFullScreen && isSmallDevice && self.$container.hasClass('h5p-standalone') && self.$container.hasClass('h5p-minimal')) {
+      //  self.toggleFullScreen();
+      //}
       self.video.play();
       self.toggleEndscreen(false);
       self.closePopupMenus();
